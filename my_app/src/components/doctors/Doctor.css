@@ -1,0 +1,23 @@
+.hospital__doctorName{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+
+.hospital__doctors{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+.hospital__doctor{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 4%;
+    font-size: 1vw;
+}
+
+div>img{
+    float: left;
+}

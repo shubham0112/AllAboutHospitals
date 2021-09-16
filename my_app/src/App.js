@@ -1,9 +1,11 @@
 import React from 'react';
-import Hospital  from './components/hospital/Hospital';
+import Hospital from './components/hospital/Hospital';
 
 function App() {
   return (
-    <Hospital id={209480126}/>
+    <>
+      <Hospital id={209480126}/>
+    </>
   );
 }
 

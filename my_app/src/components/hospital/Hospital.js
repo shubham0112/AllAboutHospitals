@@ -1,21 +1,29 @@
 import React from 'react'
-import Departments from '../Departments';
-import {data} from '../../data';
+import Departments from '../departments/Departments';
+import Doctor from '../doctors/Doctor';
+import data from '../../data';
+import './Hospital.css'
 
 //props mein id aayegi required hospital ki..
 //then search for that particular hospital and display details 
 
 const Hospital=({id}) =>{
+    let req_hospital=data.find((obj)=>obj.id===id);
     return (
-        <div>
-            <h1>xyz Hospital</h1>
-            <div>
-                <Departments/>
+        <div className='hospital__wrap'>
+
+            <h1 className='hospital__name'>{req_hospital.name}</h1>
+
+            <div className='hospital__row'>
+                {/* departments component*/}
+                <Departments hospital={req_hospital}/>
             </div>
-            <div>
-                <h1>I am doctors component</h1>
-                {/* doctor component*/}
+
+            <div className='hospital__row'>
+                {/* hospital component*/}
+                <Doctor hospital={req_hospital}/>
             </div>
+
             <div>
                 <h1>I am rating component</h1>
                 {/* rating component*/}
