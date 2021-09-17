@@ -1,0 +1,26 @@
+*{
+    margin: 0 px;
+    background-color: rgb(235, 234, 234);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hospital__wrap{
+    text-align: center;
+}
+
+.hospital__name{
+    text-transform: uppercase;
+    font-weight: 600;
+    word-spacing: 1px;
+    font-size: 3vw;
+}
+
+.hospital__row{
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
