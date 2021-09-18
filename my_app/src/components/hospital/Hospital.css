@@ -1,26 +1,53 @@
-*{
-    margin: 0 px;
-    background-color: rgb(235, 234, 234);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.hospital__wrap{
-    text-align: center;
-}
-
-.hospital__name{
-    text-transform: uppercase;
-    font-weight: 600;
-    word-spacing: 1px;
-    font-size: 3vw;
+.hospital__wrap {
+  margin: 0 px;
+  background-color: #fff;
+  /* background-color: black; */
+  font-size: min(2vw, 18px);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-.hospital__row{
-    border: solid black 2px;
-    border-radius: 5px;
-    margin-top:2%;
-    margin-bottom:4%;
-    margin-left: 5%;
-    margin-right: 5%;
-
+.hospital__name {
+  text-transform: uppercase;
+  font-weight: 600;
+  word-spacing: 1px;
+  font-size: 3em;
+  padding: 1%;
 }
 
+.hospital__row {
+  border-radius: 1em;
+  background-color: white;
+  box-shadow: 0.5em 0.5em 0.8em #aaaaaa;
+
+  padding: 3%;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  width: 90%;
+}
+
+.green,
+.red {
+  font-size: 0.9em;
+  font-weight: 700;
+  width: fit-content;
+  padding: 0.5%;
+  margin: auto;
+  margin-top: 1%;
+  border-radius: 0.5em;
+}
+
+.green {
+  color: rgb(9, 155, 9);
+  border: 1px solid green;
+  background-color: rgba(34, 231, 34, 0.39);
+}
+
+.red {
+  color: rgb(190, 15, 15);
+  border: 1px solid rgb(146, 4, 4);
+  background-color: rgba(228, 22, 22, 0.39);
+}
