@@ -2,13 +2,13 @@ import React from 'react'
 import './Gallery.css'
 
 function Gallery({hospital}) {
-    const {gallery}=hospital;
+    const {id,gallery}=hospital;
     return (
         <div className='wrapper'>
             <div className="hospital__gallery">
                 {
                     gallery.map((image)=>{
-                        return <img className="hospital__img" src={image} alt="this is an imagee" />
+                        return <img key={id} className="hospital__img" src={image} alt="this is an imagee" />
                     })
                 }
             </div>

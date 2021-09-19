@@ -3,6 +3,8 @@ import Hospital  from './components/hospital/Hospital';
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Navbar from './components/Home/Navbar';
+import SignUp from './components/signup/SignUp';
+import AddReview from './components/add_review/AddReview';
 import {BrowserRouter as Router,Route} from "react-router-dom";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Route path='/Home'><Home/></Route>
       <Route path='/Hospitals'><Hospital id={209480126}/></Route>
       <Route path='/About'><About/></Route>
+      <Route path='/SignUp'><SignUp/></Route>
+      <Route path='/AddReview'><AddReview/></Route>
     </Router>
     
     </>
