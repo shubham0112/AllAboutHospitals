@@ -1,37 +1,50 @@
 import React from 'react'
+import {useState} from 'react'
 
-const Hospitals = () => {
-    return (
-        <>
-          <h1>Hospitals</h1>  
-          <div className="cards">
-                <div className="card">
+
+const Hospitals = ({data}) => {
+    const Empty=()=>{
+        return (<div className="cards"><h1>Empty</h1></div>)
+    }
+    const Full=()=>{
+        return (
+            
+                <div className="cards">
+                    {
+                       data.map(item=><div className="card">
+                          
+                       <h3>{item.name}</h3>
+                       <h3>Contact</h3>
+                       <button>more info</button>
+                   </div>) 
+                      }
+                    </div>
+                
+        )
+    }
+    if(data.length==0)
+    return <Empty/>
+    else 
+    return <Full/>
+  
+    // return (
+    //     <>
+    //     if(data.length==0){
+    //     (<div className="cards"><h1>Empty</h1></div>)
+    // }   else{
+    //       <div className="cards">
+    //           {
+    //              data.map(item=><div className="card">
                     
-                    <h3>Name</h3>
-                    <h3>Contact</h3>
-                    <button>more info</button>
-                </div>
-                <div className="card">
-                    
-                    <h3>Name</h3>
-                    <h3>Contact</h3>
-                    <button>more info</button>
-                </div>
-                <div className="card">
-                    
-                    <h3>Name</h3>
-                    <h3>Contact</h3>
-                    <button>more info</button>
-                </div>
-                <div className="card">
-                    
-                    <h3>Name</h3>
-                    <h3>Contact</h3>
-                    <button>more info</button>
-                </div>
-            </div>
-        </>
-    )
+    //              <h3>{item.name}</h3>
+    //              <h3>Contact</h3>
+    //              <button>more info</button>
+    //          </div>) 
+    //             }
+    //           </div>
+    //      }     
+    //     </>
+    
 }
 
 export default Hospitals

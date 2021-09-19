@@ -1,21 +1,27 @@
 import React from 'react'
+import {useState} from 'react'
 
-const Search = () => {
+const Search = ({search,hospitalName,setHospitalName,disease,setDisease}) => {
+
+    const handlesubmit = (e)=>{
+        e.preventDefault();
+        search(hospitalName,disease);
+    }
+    
     return (
         <>
-            <h1>Search</h1>
             <div className="form">
-            <form onSubmit={(e)=>{e.preventDefault();}}>
+            <form >
                 <div className="form-group">
                 <label>Hospital Name:</label>
-                <input type="text"/>
+                <input type="text" value={hospitalName} onChange={(e)=>{setHospitalName(e.target.value)}}/>
                 </div>
                 <div className="form-group">
                 <label>Disease:</label>
-                <input type="text"/>
+                <input type="text" value={disease} onChange={(e)=>{setDisease(e.target.value)}}/>
                 </div>
                 <div className="form-group">
-                <button type="submit">Search</button>
+                <button type="submit" onClick={(e)=>handlesubmit(e)}>Search</button>
                 </div>
             </form>
             </div>
