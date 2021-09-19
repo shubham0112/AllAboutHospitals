@@ -2,14 +2,27 @@ import React from 'react';
 import './Doctor.css';
 
 
-function Display_doctor(props){
+function DisplayDoctor(props){
     const {name,img,specialization,years}=props.doctor;
     return(
-        <div className='hospital__doctor'>
-            <img src={img} alt="image here" />
-            <h3>Name : {name}</h3>
-            <h3>Field of Specialization : {specialization}</h3>
-            <h3>Experience : {years} years</h3>
+        <div className='wrapper'>
+            <div className='hospital__doctor'>
+                <img className="hospital__doctorImage" src={img} alt=" imagee here" />
+                <div className='column2'>
+                    <div>
+                        <span className='bold'>Name : </span>
+                        <span>{name}</span>
+                    </div>
+                    <div>
+                        <span className='bold'>Speciality : </span>
+                        <span>{specialization}</span>
+                    </div>
+                    <div>
+                        <span className='bold'>Experience : </span>
+                        <span>{years} years</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
@@ -17,12 +30,12 @@ function Display_doctor(props){
 function Doctor({hospital}) {
     const {doctors}=hospital;
     return (
-        <div>
+        <div className='wrapper'>
             <h3 className='hospital__doctorName'>List of Doctors</h3>
             <div className='hospital__doctors'>
                 {
                     doctors.map((doctor)=>{
-                        return <Display_doctor doctor={doctor}/>
+                        return <DisplayDoctor doctor={doctor}/>
                     })
                 }
             </div>

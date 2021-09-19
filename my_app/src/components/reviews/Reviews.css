@@ -2,20 +2,20 @@
   font-size: min(1.8vw, 18px);
 }
 
-.hospital__doctorName {
+.hospital__UserHeading {
   font-size: 2em;
   padding-bottom: 2%;
 }
 
-.hospital__doctors {
+.hospital__reviews {
   display: grid;
-
+  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   grid-column-gap: 2%;
   grid-row-gap: 1%;
 }
 
-.hospital__doctor {
+.hospital__review {
   border: solid black 2px;
   border-radius: 0.5em;
   padding: 1.5%;
@@ -28,9 +28,21 @@
   justify-content: space-between;
 }
 
-.hospital__doctorImage {
+.hospital__userImage {
   width: 10em;
 }
-.bold {
-  font-weight: 800;
+
+.btn {
+  background-color: rgb(12, 131, 12);
+  color: white;
+  border: none;
+  padding: 1%;
+  border-radius: 0.5em;
+  margin: 3%;
+  font-size: 1.3em;
+}
+
+.btn:hover {
+  background-color: rgba(12, 131, 12, 0.877);
+  cursor: pointer;
 }

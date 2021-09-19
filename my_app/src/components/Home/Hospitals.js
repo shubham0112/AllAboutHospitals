@@ -1,10 +1,9 @@
 import React from 'react'
-import {useState} from 'react'
 
 
 const Hospitals = ({data}) => {
     const Empty=()=>{
-        return (<div className="cards"><h1>Empty</h1></div>)
+        return (<div className="cards"><h3>No hospitals found</h3></div>)
     }
     const Full=()=>{
         return (
@@ -22,7 +21,7 @@ const Hospitals = ({data}) => {
                 
         )
     }
-    if(data.length==0)
+    if(data.length===0)
     return <Empty/>
     else 
     return <Full/>

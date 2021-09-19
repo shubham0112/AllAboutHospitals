@@ -3,10 +3,7 @@ import Hospital  from './components/hospital/Hospital';
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Navbar from './components/Home/Navbar';
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
+import {BrowserRouter as Router,Route} from "react-router-dom";
 
 function App() {
   return (

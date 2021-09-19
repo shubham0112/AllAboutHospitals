@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from 'react'
+
 
 const Search = ({search,hospitalName,setHospitalName,disease,setDisease}) => {
 
