@@ -1,6 +1,6 @@
-.wrapper {
+/* .wrapper {
   font-size: min(1.8vw, 18px);
-}
+} */
 
 .hospital__doctorName {
   font-size: 2em;
@@ -10,22 +10,23 @@
 .hospital__doctors {
   display: grid;
 
-  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
   grid-column-gap: 2%;
   grid-row-gap: 1%;
 }
 
 .hospital__doctor {
-  border: solid black 2px;
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(212, 211, 211);
   border-radius: 0.5em;
   padding: 1.5%;
   margin: 3%;
-  font-size: 1em;
+  font-size: 1.3em;
 
-  width: 20em;
+  width: 23em;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hospital__doctorImage {

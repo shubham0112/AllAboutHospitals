@@ -1,6 +1,6 @@
-.wrapper {
+/* .wrapper {
   font-size: min(1.8vw, 18px);
-}
+} */
 
 .hospital__UserHeading {
   font-size: 2em;
@@ -10,17 +10,19 @@
 .hospital__reviews {
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(28em, 1fr));
   grid-column-gap: 2%;
   grid-row-gap: 1%;
 }
 
 .hospital__review {
-  border: solid black 2px;
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(212, 211, 211);
   border-radius: 0.5em;
   padding: 1.5%;
   margin: 3%;
-  font-size: 1em;
+  /* font-size: 1em; */
+  font-size: 1.3em;
 
   width: 20em;
 
@@ -33,16 +35,20 @@
 }
 
 .btn {
-  background-color: rgb(12, 131, 12);
-  color: white;
   border: none;
-  padding: 1%;
+  background-color: black;
+  color: white;
   border-radius: 0.5em;
-  margin: 3%;
-  font-size: 1.3em;
+  font-size: 1.6em;
+  padding: 0.5em;
+  margin: 0.7em;
 }
 
 .btn:hover {
-  background-color: rgba(12, 131, 12, 0.877);
+  background-color: rgba(0, 0, 0, 0.911);
   cursor: pointer;
+}
+
+.give_padding {
+  padding: 0.4em;
 }

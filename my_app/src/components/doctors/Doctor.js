@@ -31,7 +31,6 @@ function Doctor({hospital}) {
     const {doctors}=hospital;
     return (
         <div className='wrapper'>
-            <h3 className='hospital__doctorName'>List of Doctors</h3>
             <div className='hospital__doctors'>
                 {
                     doctors.map((doctor)=>{

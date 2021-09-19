@@ -1,6 +1,6 @@
-.wrapper {
-  font-size: min(1.8vw, 18px);
-}
+/* .wrapper {
+  font-size: min(1.8vw, 13px);
+} */
 
 .hospital__departmentName {
   padding-bottom: 2%;
@@ -20,9 +20,11 @@
 }
 
 .hospital__department {
-  border: solid black 2px;
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.25em 0.25em 0.25em 0.25em rgb(212, 211, 211);
   border-radius: 0.5em;
   padding: 2%;
   margin: 4%;
   font-size: 1.5em;
+  text-transform: capitalize;
 }

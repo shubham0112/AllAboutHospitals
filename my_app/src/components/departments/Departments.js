@@ -5,7 +5,6 @@ function Departments({hospital}) {
     const {departments}=hospital;
     return (
         <div className="wrapper">
-            <h3 className="hospital__departmentName">Available departments</h3>
             <div className="hospital__departments">
                 {
                     departments.map((department)=>{

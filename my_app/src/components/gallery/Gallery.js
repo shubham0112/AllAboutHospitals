@@ -5,7 +5,6 @@ function Gallery({hospital}) {
     const {gallery}=hospital;
     return (
         <div className='wrapper'>
-            <h3 className="hospital__galleryName">Photo Gallery of the Hospital</h3>
             <div className="hospital__gallery">
                 {
                     gallery.map((image)=>{

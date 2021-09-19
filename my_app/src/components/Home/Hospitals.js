@@ -3,8 +3,12 @@ import React from 'react'
 const Hospitals = () => {
     return (
         <>
-          <h1>Hospitals</h1>  
-          <div className="cards">
+            <div className='card_ka_header_ka_header'>
+                <div className="card_ka_header">
+                    Hospitals
+                </div>
+            </div>
+            <div className="cards">
                 <div className="card">
                     
                     <h3>Name</h3>
