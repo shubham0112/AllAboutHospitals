@@ -1,16 +1,22 @@
 body {
-  /* background-color: rgba(131, 238, 233, 0.918);
+  background-color: rgba(131, 238, 233, 0.918);
   background-image: linear-gradient(
     to right,
     rgba(106, 230, 223, 0.918) 0%,
     rgba(134, 252, 207, 0.918) 60%
-  ); */
-  background-color: rgb(141, 138, 138);
-  background-image: linear-gradient(
+  );
+  /* background-color: rgb(141, 138, 138); */
+  /* background-image: linear-gradient(
     to right,
     rgba(183, 185, 185, 0.918) 0%,
     rgba(198, 211, 206, 0.918) 60%
-  );
+    ); */
+  /* background-color: rgb(140, 173, 243);
+  background-image: linear-gradient(
+    to right,
+    rgb(150, 192, 248) 0%,
+    rgb(6, 57, 99) 60%
+  ); */
 }
 .hospital__wrap {
   margin: 0 px;

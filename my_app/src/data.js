@@ -2,6 +2,7 @@ const data=[
     {
         id:209480126,
         name:"Sum hospital",
+        disease:"corona",
         departments:["cardiology","neurology","pediatrics","afhi","ajfsa","afnadnn","ajfba"],
         doctors:[{name:"Peter",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884yE-aP3PQdStnZ7KZecX04EDdYa2YpRgQ&usqp=CAU",specialization:"Cardiologist",years:5},{name:"Jon",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884yE-aP3PQdStnZ7KZecX04EDdYa2YpRgQ&usqp=CAU",specialization:"Anesthesiologist",years:6},{name:"Susan",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884yE-aP3PQdStnZ7KZecX04EDdYa2YpRgQ&usqp=CAU",specialization:"Neurologist",years:15}],
         beds:10,
