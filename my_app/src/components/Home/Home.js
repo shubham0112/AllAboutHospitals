@@ -27,7 +27,7 @@ const Home = () => {
     const search=(hospitalName,disease)=>{
         filtered.splice(0,filtered.length)
         const x=(data.filter(item => item.name===hospitalName&&disease===item.disease));
-        console.log(x);
+        // console.log(x);
         setFiltered(x);
         setHospitalName('');
         setDisease('');

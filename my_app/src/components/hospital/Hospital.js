@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+import { useParams } from 'react-router-dom';
 import Departments from '../departments/Departments';
 import Doctor from '../doctors/Doctor';
 import Amenities from '../amenities/Amenities';
@@ -10,8 +11,23 @@ import './Hospital.css'
 //props mein id aayegi required hospital ki..
 //then search for that particular hospital and display details 
 
-const Hospital=({id}) =>{
-    let req_hospital=data.find((obj)=>obj.id===id);
+const Hospital=() =>{
+    const [req_hospital,setReqHospital]=useState({});
+    // const [name,setName]=useState('Shubham');
+    
+    // setName('aufhbu');
+    // console.log(name);
+    const {id:id_received}=useParams();
+    console.log(id_received);
+    
+    useEffect(()=>{
+        // console.log(id_received);
+        console.log("inside useEffect");
+        const newHospital=data.find((obj)=>obj.id===parseInt(id_received));
+        setReqHospital(newHospital);
+        console.log(req_hospital);
+    },[]);
+
     return (
         <div className='hospital__wrap'>
 
@@ -20,8 +36,6 @@ const Hospital=({id}) =>{
                     {req_hospital.name}
                 </div>
             </div>
-
-            {/* <h1 className='hospital__name'>{req_hospital.name}</h1> */}
 
             <p className={req_hospital.beds>0?"green":"red"}>(No. of beds available : {req_hospital.beds})</p>
 

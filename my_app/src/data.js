@@ -12,9 +12,10 @@ const data=[
     },
     {
         id:829048982,
+        disease:'corona',
         name:"Multiply hospital",
         departments:["cardiology","neurology","pediatrics"],
-        doctors:[{name:"Peter",img:"",specialization:"Heart",years:5},{name:"Jon",img:"",specialization:"Eye",years:6},{name:"Anna",img:"",specialization:"Brain",years:15}],
+        doctors:[{name:"Siddhant",img:"",specialization:"Heart",years:5},{name:"Jon",img:"",specialization:"Eye",years:6},{name:"Anna",img:"",specialization:"Brain",years:15}],
         beds:20,
         amenities:["ac","tv"],
         reviews:[{img:"",text:""}],

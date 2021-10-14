@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 
 const Hospitals = ({data}) => {
     const Empty=()=>{
@@ -16,11 +16,17 @@ const Hospitals = ({data}) => {
                         data.map(
                             item=><div className="card">
                             
-                            <h3>{item.name}</h3>
-                            <h3>Contact</h3>
-                            <button>more info</button></div>
+                                <h3>{item.name}</h3>
+                                <h3>Contact</h3>
+                                <button>
+                                    <Link className='text-link' to={`/Hospital/${data[0].id}`}>
+                                        More info 
+                                    </Link>
+                                </button>
+                            </div>
                         ) 
                     }   
+                             
                 </div>
             </>        
         )

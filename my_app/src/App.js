@@ -14,10 +14,11 @@ function App() {
       <Navbar/>
       
       <Route path='/Home'><Home/></Route>
-      <Route path='/Hospitals'><Hospital id={209480126}/></Route>
+      {/* <Route path='/Hospitals'><Hospital id={209480126}/></Route> */}
       <Route path='/About'><About/></Route>
       <Route path='/SignUp'><SignUp/></Route>
       <Route path='/AddReview'><AddReview/></Route>
+      <Route path='/Hospital/:id' children={<Hospital/>}></Route>
     </Router>
     
     </>
