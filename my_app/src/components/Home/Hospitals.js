@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 
 const Hospitals = ({data}) => {
     const Empty=()=>{
@@ -7,42 +7,34 @@ const Hospitals = ({data}) => {
     }
     const Full=()=>{
         return (
-            
+            <>
+                <div className='card_ka_header_ka_header'>
+                    <div className="card_ka_header">Hospitals</div>
+                </div>
                 <div className="cards">
                     {
-                       data.map(item=><div className="card">
-                          
-                       <h3>{item.name}</h3>
-                       <h3>Contact</h3>
-                       <button>more info</button>
-                   </div>) 
-                      }
-                    </div>
-                
+                        data.map(
+                            item=><div className="card">
+                            
+                                <h3>{item.name}</h3>
+                                <h3>Contact</h3>
+                                <button>
+                                    <Link className='text-link' to={`/Hospital/${data[0].id}`}>
+                                        More info 
+                                    </Link>
+                                </button>
+                            </div>
+                        ) 
+                    }   
+                             
+                </div>
+            </>        
         )
     }
     if(data.length===0)
     return <Empty/>
     else 
     return <Full/>
-  
-    // return (
-    //     <>
-    //     if(data.length==0){
-    //     (<div className="cards"><h1>Empty</h1></div>)
-    // }   else{
-    //       <div className="cards">
-    //           {
-    //              data.map(item=><div className="card">
-                    
-    //              <h3>{item.name}</h3>
-    //              <h3>Contact</h3>
-    //              <button>more info</button>
-    //          </div>) 
-    //             }
-    //           </div>
-    //      }     
-    //     </>
     
 }
 

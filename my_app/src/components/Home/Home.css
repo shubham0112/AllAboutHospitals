@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
 }
 
@@ -8,7 +8,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  top:0;
+  top: 0;
   position: sticky;
 }
 
@@ -30,40 +30,94 @@ li a:hover {
   background-color: #111;
 }
 
-.form{
+.form {
   box-sizing: border-box;
-  border: 1px solid black;
-  width:33%;
-  margin-left: 33%;
-  margin-right: 33%;
-  padding:20px;
-  display: flex; 
-  background-color: coral;
- justify-content: center;
+  padding: 3%;
+  margin: auto;
+  margin-bottom: 3%;
+  /* margin-top: 3%; */
+  width: 33%;
+  display: flex;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
 }
-.form-group>input{
-  width:80%;
-  
+.form-group > input {
+  outline: none;
+  width: 80%;
 }
 
-.form-group{
+.form-group {
   text-align: center;
 }
-.cards{
-  border: 1px solid black;
-  display: flex;
-  padding: 10px;
-  margin: 10%;
-  overflow:scroll;
-  background-color:coral;
-}
-.card{
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  background-color: azure;
+
+.wrap-form {
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.25em 0.25em 0.25em 0.25em rgb(212, 211, 211);
+  border-radius: 0.5em;
+  padding: 3%;
 }
 
-.Home{
-  margin: 10%;
+.cards {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: scroll;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: rgb(255, 255, 255);
+}
+.cards::-webkit-scrollbar{
+  width:0;
+}
+.card {
+  padding: 2%;
+  margin: 3%;
+  margin-right: 1.2%;
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.25em 0.25em 0.25em 0.25em rgb(212, 211, 211);
+  border-radius: 0.5em;
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  width: 33%;
+}
+
+.header_ka_header {
+  display: flex;
+  justify-content: center;
+}
+
+.card_ka_header {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  width: 80%;
+}
+
+.card_ka_header_ka_header {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_search {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.btn_search:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.911);
 }
