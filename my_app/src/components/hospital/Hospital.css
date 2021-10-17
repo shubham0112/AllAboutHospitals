@@ -1,8 +1,26 @@
+body {
+  background-color: rgba(131, 238, 233, 0.918);
+  background-image: linear-gradient(
+    to right,
+    rgba(106, 230, 223, 0.918) 0%,
+    rgba(134, 252, 207, 0.918) 60%
+  );
+  /* background-color: rgb(141, 138, 138); */
+  /* background-image: linear-gradient(
+    to right,
+    rgba(183, 185, 185, 0.918) 0%,
+    rgba(198, 211, 206, 0.918) 60%
+    ); */
+  /* background-color: rgb(140, 173, 243);
+  background-image: linear-gradient(
+    to right,
+    rgb(150, 192, 248) 0%,
+    rgb(6, 57, 99) 60%
+  ); */
+}
 .hospital__wrap {
   margin: 0 px;
-  background-color: #fff;
-  /* background-color: black; */
-  font-size: min(2vw, 18px);
+  font-size: min(1.8vw, 13px);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
@@ -10,28 +28,41 @@
 
 .hospital__name {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 540;
   word-spacing: 1px;
   font-size: 3em;
-  padding: 1%;
+  padding: 0.5%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+
+.hospital__name_ka_header {
+  display: flex;
+  justify-content: center;
 }
 
 .hospital__row {
-  border-radius: 1em;
-  background-color: white;
-  box-shadow: 0.5em 0.5em 0.8em #aaaaaa;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: rgb(255, 255, 255);
 
-  padding: 3%;
+  padding: 2%;
   margin: auto;
-  margin-bottom: 3%;
-  margin-top: 3%;
 
   width: 90%;
 }
 
+.hospital__row:last-child {
+  margin-bottom: 2%;
+}
+
 .green,
 .red {
-  font-size: 0.9em;
+  font-size: 1.3em;
   font-weight: 700;
   width: fit-content;
   padding: 0.5%;
@@ -41,13 +72,31 @@
 }
 
 .green {
-  color: rgb(9, 155, 9);
-  border: 1px solid green;
-  background-color: rgba(34, 231, 34, 0.39);
+  color: white;
+  /* border: 1px solid rgb(3, 196, 3);
+  background-color: rgb(3, 196, 3); */
+  border: 1px solid rgb(4, 141, 4);
+  background-color: rgb(4, 141, 4);
 }
 
 .red {
-  color: rgb(190, 15, 15);
-  border: 1px solid rgb(146, 4, 4);
-  background-color: rgba(228, 22, 22, 0.39);
+  color: white;
+  border: 1px solid rgb(199, 8, 8);
+  background-color: rgb(199, 8, 8);
+}
+
+.phirse_header {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  width: 94%;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.phirse_header_ka_header {
+  display: flex;
+  justify-content: center;
 }

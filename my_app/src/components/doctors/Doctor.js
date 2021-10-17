@@ -28,14 +28,13 @@ function DisplayDoctor(props){
 }
 
 function Doctor({hospital}) {
-    const {doctors}=hospital;
+    const {id,doctors}=hospital;
     return (
         <div className='wrapper'>
-            <h3 className='hospital__doctorName'>List of Doctors</h3>
             <div className='hospital__doctors'>
                 {
                     doctors.map((doctor)=>{
-                        return <DisplayDoctor doctor={doctor}/>
+                        return <DisplayDoctor key={id} doctor={doctor}/>
                     })
                 }
             </div>

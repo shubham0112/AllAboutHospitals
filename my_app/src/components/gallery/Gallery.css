@@ -1,6 +1,6 @@
-.wrapper {
+/* .wrapper {
   font-size: min(1.8vw, 18px);
-}
+} */
 
 .hospital__galleryName {
   padding-bottom: 2%;
@@ -21,7 +21,8 @@
 }
 
 .hospital__img {
-  border: solid black 2px;
+  border: solid rgb(212, 211, 211) 1px;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(212, 211, 211);
   border-radius: 0.5em;
   /* padding: 2%; */
   margin: 4%;
