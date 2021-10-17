@@ -121,3 +121,7 @@ li a:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.911);
 }
+.btn_search:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.911);
+}

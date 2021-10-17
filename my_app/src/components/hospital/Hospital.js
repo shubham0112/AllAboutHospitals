@@ -7,26 +7,36 @@ import Gallery from '../gallery/Gallery';
 import Reviews from "../reviews/Reviews";
 import data from '../../data';
 import './Hospital.css'
+import queryString from 'query-string'
 
 //props mein id aayegi required hospital ki..
 //then search for that particular hospital and display details 
 
-const Hospital=() =>{
-    const [req_hospital,setReqHospital]=useState({});
-    // const [name,setName]=useState('Shubham');
-    
-    // setName('aufhbu');
-    // console.log(name);
-    const {id:id_received}=useParams();
-    console.log(id_received);
+const Hospital=({location}) =>{
+    const [req_hospital,setReqHospital]=useState({
+        id:829048982,
+        disease:'corona',
+        name:"Multiply hospital",
+        departments:["cardiology","neurology","pediatrics"],
+        doctors:[{name:"Siddhant",img:"",specialization:"Heart",years:5},{name:"Jon",img:"",specialization:"Eye",years:6},{name:"Anna",img:"",specialization:"Brain",years:15}],
+        beds:20,
+        amenities:["ac","tv"],
+        reviews:[{img:"",text:""}],
+    });
+    const [id_received,setId_received]=useState('');
+   
     
     useEffect(()=>{
-        // console.log(id_received);
-        console.log("inside useEffect");
-        const newHospital=data.find((obj)=>obj.id===parseInt(id_received));
+        
+        const dat=queryString.parse(location.search);
+        const {id}=dat;
+        setId_received(id);
+        console.log(id_received)
+        const newHospital=data.find((obj)=>obj.id.toString()===id_received);
+        console.log(newHospital);
+        if(newHospital)
         setReqHospital(newHospital);
-        console.log(req_hospital);
-    },[]);
+    },[location.search,id_received,location]);
 
     return (
         <div className='hospital__wrap'>

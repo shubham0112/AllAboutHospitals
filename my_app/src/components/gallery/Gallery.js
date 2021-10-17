@@ -7,9 +7,11 @@ function Gallery({hospital}) {
         <div className='wrapper'>
             <div className="hospital__gallery">
                 {
+                    gallery?(
                     gallery.map((image)=>{
                         return <img key={id} className="hospital__img" src={image} alt="this is an imagee" />
                     })
+                    ):<h2>No pictures available</h2>
                 }
             </div>
         </div>
