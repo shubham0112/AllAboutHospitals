@@ -19,7 +19,7 @@ const Hospitals = ({data}) => {
                                 <h3>{item.name}</h3>
                                 <h3>Contact</h3>
                                 <button>
-                                    <Link className='text-link' to={`/Hospital/${data[0].id}`}>
+                                    <Link className='text-link' onClick={e => (!data) ? e.preventDefault() : null} to={`/Hospital?id=${data[0].id}`}>
                                         More info 
                                     </Link>
                                 </button>
